@@ -774,8 +774,8 @@ body {
 }
 
 .divided {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% auto;
   width: 100%;
   align-items: center;
   max-width: 1000px;
