@@ -773,17 +773,6 @@ body {
   margin-right: 10px;
 }
 
-.divided {
-  display: grid;
-  grid-template-columns: 50% auto;
-  width: 100%;
-  align-items: center;
-  max-width: 1000px;
-  margin: 50px 0px;
-  padding: 0px 5px;
-}
-
-
 .mobile {
   width: 100%;
   overflow: hidden;
@@ -800,11 +789,13 @@ body {
 }
 
 .in {
+  width: 500px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding-top: 100px;
   overflow-x: hidden;
   position: relative;
-  width: 100%;
 }
 
 
@@ -819,16 +810,13 @@ body {
   height: 770px;
 } 
 
-.mob .videoWindows {
-  width: 100%;
-}
-
 .mobile .mob {
+  position: absolute;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
+  width: 290px;
+  z-index: -1;
 }
 
 .in:hover .play {
@@ -932,6 +920,14 @@ swiper-slide img {
   text-align: center;
 }
 
+.divided {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  align-items: center;
+  max-width: 1000px;
+}
+
 .doisin {
   display: flex;
   flex-direction: column;
@@ -948,17 +944,6 @@ swiper-slide img {
   font-size: 20px;
 }
 
-
-.tpEstrategias {
-  padding-left: 30px;
-}
-
-.tpEstrategias li {
-  
-  font-size: 17px !important;
-}
-
-
 @media (max-width: 840px) {
   .divided {
     display: flex;
@@ -970,7 +955,6 @@ swiper-slide img {
     align-items: flex-start;
     width: 100%;
     padding: 0px 80px;
-    margin-top: 50px;
   }
 }
 
